@@ -1,0 +1,123 @@
+body{
+    background-color:#f0f4f8;
+    font-family:Arial;
+}
+#emptyMessage {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+.container {
+    width:900px;
+    margin:50px auto;
+    background-color:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+input{
+    width:97.5%;
+
+    padding:10px;
+
+    margin-top:10px;
+    box-shadow:1px 1px 0px gray;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    background-color:black;
+    border-radius: 10px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition: transform 0.15s ease-out, background-color 0.15s ease-out;
+}
+button:active{
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+background-color: #333333;
+transform: scale(0.95);
+color : white; 
+ 
+}
+
+.student {
+
+    background-color: #eee;
+
+    padding: 10px;
+
+    margin-top: 10px;
+
+    border-radius: 5px;
+
+}
+textarea {
+    width: 100%;       /* Makes it fill the container width */
+    box-sizing: border-box; 
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;  /* Allows resizing up/down, but blocks left/right breakage */
+     box-shadow:1px 1px 1px gray;
+}
+#FeedList {
+    height: 150px;
+    overflow-y: scroll;
+}
+#FeedList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#FeedList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#FeedList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.review {
+  background-color: #ffffff;
+  border-left: 5px solid gray; 
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100px; 
+}
+
+.review p {
+  font-size: 16px;
+  color: #333333;
+  font-style: italic; 
+  line-height: 1.5;
+  margin: 0 0 15px 0; 
+  justify-content: center;
+}
+
+.review h4 {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 600;
+  margin: 0;
+  
+  
+  margin-top: auto; 
+}
+
+.review h4::before {
+  content: "— ";
+  color: #007bff;
+}
+
+
+

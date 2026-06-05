@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FEEDBACK SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>FEEDBACK</h1>
+
+        <input type="text" id="name" placeholder="Name">
+
+        <textarea
+              id="feedback" 
+              name="userReview" 
+              rows="4" 
+              maxlength="500" 
+              placeholder="Share your feedback here...">
+    </textarea>
+
+        <button type="button" onclick="addData()" id="add">Add Feedback</button>
+        <button type="button" onclick="dltData() "id="dlt">Delete Feedback</button>
+
+        <h2>INSIGHTS</h2>
+         <div id="FeedList">
+            <p id="emptyMessage"></p>
+         </div>
+    </div>    
+       
+
+    
+
+    
+    <script src="script.js"></script>
+</body>
+
+
+</html>
