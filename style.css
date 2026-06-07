@@ -325,3 +325,8 @@ body.dark-mode #emptyMessage {
 color: #777;
 
 }
+.dlt{
+    width:15%;
+    padding:15px;
+    margin-left:85%
+}
