@@ -137,6 +137,6 @@ This project helped me learn:
 
 ## Author
 
-Built by [Your Name]
+Built by KARTHIK MANOJ
 
 My first full-stack web application.
