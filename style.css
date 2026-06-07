@@ -1,123 +1,327 @@
 body{
-    background-color:#f0f4f8;
-    font-family:Arial;
+
+background-color:#f0f4f8;
+
+font-family:Arial;
+
 }
+
 #emptyMessage {
-    color: #888;
-    text-align: center;
-    font-style: italic;
-    margin-top: 20px;
+
+color: #888;
+
+text-align: center;
+
+font-style: italic;
+
+margin-top: 20px;
+
 }
+
 .container {
-    width:900px;
-    margin:50px auto;
-    background-color:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0px 0px 10px gray;
+
+width:900px;
+
+margin:50px auto;
+
+background-color:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0px 0px 10px gray;
+
 }
 
 input{
-    width:97.5%;
 
-    padding:10px;
+width:97.5%;
 
-    margin-top:10px;
-    box-shadow:1px 1px 0px gray;
+padding:10px;
+
+margin-top:10px;
+
+box-shadow:1px 1px 0px gray;
+
 }
 
 button{
-    width:100%;
-    padding:15px;
-    margin-top:15px;
-    background-color:black;
-    border-radius: 10px;
-    color:white;
-    border:none;
-    cursor:pointer;
-    transition: transform 0.15s ease-out, background-color 0.15s ease-out;
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+background-color:black;
+
+border-radius: 10px;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+transition: transform 0.15s ease-out, background-color 0.15s ease-out;
+
 }
+
 button:active{
+
 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+
 background-color: #333333;
+
 transform: scale(0.95);
-color : white; 
- 
+
+color : white;
+
 }
 
 .student {
 
-    background-color: #eee;
+background-color: #eee;
 
-    padding: 10px;
+padding: 10px;
 
-    margin-top: 10px;
+margin-top: 10px;
 
-    border-radius: 5px;
+border-radius: 5px;
 
 }
+
 textarea {
-    width: 100%;       /* Makes it fill the container width */
-    box-sizing: border-box; 
-    padding: 12px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;  /* Allows resizing up/down, but blocks left/right breakage */
-     box-shadow:1px 1px 1px gray;
+
+width: 100%; /* Makes it fill the container width */
+
+box-sizing: border-box;
+
+padding: 12px;
+
+margin-top: 10px;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+resize: vertical; /* Allows resizing up/down, but blocks left/right breakage */
+
+box-shadow:1px 1px 1px gray;
+
 }
+
 #FeedList {
-    height: 150px;
-    overflow-y: scroll;
+
+height: 200px;
+
+overflow-y: scroll;
+
 }
+
 #FeedList::-webkit-scrollbar {
-    width: 8px;
+
+width: 8px;
+
 }
 
 #FeedList::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
+
+background: #888;
+
+border-radius: 4px;
+
 }
 
 #FeedList::-webkit-scrollbar-thumb:hover {
-    background: #555;
+
+background: #555;
+
 }
+
 .review {
-  background-color: #ffffff;
-  border-left: 5px solid gray; 
-  padding: 20px;
-  margin-bottom: 16px;
-  border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  
-  display: flex;
-  flex-direction: column;
-  min-height: 100px; 
+
+background-color: #ffffff;
+
+border-left: 5px solid gray;
+
+padding: 20px;
+
+margin-bottom: 16px;
+
+border-radius: 6px;
+
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+display: flex;
+
+flex-direction: column;
+
+min-height: 100px;
+
 }
 
 .review p {
-  font-size: 16px;
-  color: #333333;
-  font-style: italic; 
-  line-height: 1.5;
-  margin: 0 0 15px 0; 
-  justify-content: center;
+
+font-size: 16px;
+
+color: #333333;
+
+font-style: italic;
+
+line-height: 1.5;
+
+margin: 0 0 15px 0;
+
+justify-content: center;
+
 }
 
 .review h4 {
-  font-size: 14px;
-  color: #666666;
-  font-weight: 600;
-  margin: 0;
-  
-  
-  margin-top: auto; 
+
+font-size: 14px;
+
+color: #666666;
+
+font-weight: 600;
+
+margin: 0;
+
+margin-top: auto;
+
 }
 
 .review h4::before {
-  content: "— ";
-  color: #007bff;
+
+content: "— ";
+
+color: #007bff;
+
 }
 
 
 
+.dlt{
+
+width:15%;
+
+padding: 10px;
+
+}
+
+/* Dark Mode*/
+
+.toggle-btn {
+
+width: auto;
+
+padding: 8px 15px;
+
+margin: 0 0 15px auto;
+
+display: block;
+
+font-size: 14px;
+
+background-color: #333;
+
+}
+
+body.dark-mode .toggle-btn {
+
+background-color: #f0f4f8;
+
+color: #121212;
+
+}
+
+/* Dark Mode Transitions */
+
+body, .container, input, textarea, .review {
+
+transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Dark Mode Overrides */
+
+body.dark-mode {
+
+background-color: #121212;
+
+}
+
+body.dark-mode .container {
+
+background-color: #1e1e1e;
+
+color: #ffffff;
+
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+body.dark-mode input,
+
+body.dark-mode textarea {
+
+background-color: #2d2d2d;
+
+color: #ffffff;
+
+border: 1px solid #444;
+
+box-shadow: 1px 1px 0px #333;
+
+}
+
+body.dark-mode input::placeholder,
+
+body.dark-mode textarea::placeholder {
+
+color: #aaa;
+
+}
+
+body.dark-mode button:not(.toggle-btn) {
+
+background-color: #ffffff;
+
+color: #121212;
+
+}
+
+body.dark-mode button:not(.toggle-btn):active {
+
+background-color: #cccccc;
+
+}
+
+body.dark-mode .review {
+
+background-color: #2a2a2a;
+
+border-left: 5px solid #007bff;
+
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+body.dark-mode .review p {
+
+color: #e0e0e0;
+
+}
+
+body.dark-mode .review h4 {
+
+color: #aaa;
+
+}
+
+body.dark-mode #emptyMessage {
+
+color: #777;
+
+}
